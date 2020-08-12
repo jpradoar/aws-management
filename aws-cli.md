@@ -15,8 +15,8 @@ ssh -i "CLIENT-X.pem" ubuntu@$(aws ec2 describe-instances|jq -r '.Reservations[]
 
 ### Describe all instances on profile
 aws ec2 describe-instances
- # to avoid use --profile you can export current profile
- # export AWS_PROFILE=YOUR-PROFILE
+ - to avoid use --profile you can export current profile
+ - export AWS_PROFILE=YOUR-PROFILE
 
 
 ### List instances by Name and ID
